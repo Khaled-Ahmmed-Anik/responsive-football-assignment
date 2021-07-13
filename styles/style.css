@@ -1,7 +1,9 @@
-/* common-styles */
+
 
 /* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common-styles */
 
 body{
     margin: 0px ;
@@ -20,7 +22,7 @@ body{
 }
 
 .button-style{
-    width: 168px;
+    width: 188px;
     height: 44px;
     padding: 10px 24px 10px 24px;
     background-color: #E02C6D;
@@ -36,24 +38,49 @@ body{
     font-size: 16px;
 }
 
-/* header-styles */
-header{
-    height: 677px;
-    background-color: #2D25A0;
+.button-style>a>i{
+    padding-left: 15px;
+}
+
+.parent-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.header-container{
-    width: 1160px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    overflow: hidden;
+.containers{
+    width: 1160px; 
 }
 
+.discription{
+    font-weight:100;
+    Font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+
+/* header-styles */
+
+
+header{
+    height: 677px;
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+
+header:hover .button-style{
+    transform: scale(1.5) translate(25px,0px);;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    
+}
 
 
 .button-style{
@@ -66,23 +93,91 @@ header{
     height: 430px;
 }
 
-.header-container:hover .button-style{
-    transform: scale(1.5);
-}
+
 
 
 
 /* main-part */
 
+main{
+    margin-bottom: 70px;
+}
+
 /* players-part */
+
+.players-container{
+    margin-bottom: 70px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
 
 .player{
     width: 330px;
-    height: 475px;
     padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .player>img{
-    width: 300px;
+    width: 330px;
     height: 260px;
 }
+
+.player>h3{
+    font-weight: 700;
+    Font-style: Bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+
+
+
+/* highlights-part */
+
+.highlights-container{
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.highlights-details>h1{
+    font-size: 48px;
+    color: black;
+}
+.highlights-container>.banner>img{
+    width: 560px;
+    height: 425px;
+}
+
+
+
+/* footer-style */
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.footer-container{
+    margin: 60px 0px 60px 0px;
+    width: 485px;
+}
+
+.logo>img{
+    width: 485px;
+    height: 100px;
+}
+
+.socil-media-container,.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+   margin: 10px;
+}
+
 
