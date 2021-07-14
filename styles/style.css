@@ -3,6 +3,12 @@
 /* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 /* common-styles */
 
 body{
@@ -39,14 +45,14 @@ body{
 }
 
 .button-style>a>i{
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .parent-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
-    justify-content: center;
 }
 
 .containers{
@@ -54,7 +60,7 @@ body{
 }
 
 .discription{
-    font-weight:100;
+    font-weight:400;
     Font-style: normal;
     font-size: 16px;
     line-height: 26px;
@@ -64,6 +70,40 @@ body{
 
 /* header-styles */
 
+/* menu-style */
+menu{
+    margin: 40px 0px 100px 0px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Poppins
+}
+
+.menu-container>a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-right: 35px;
+    font-size: 16px;
+    font-family: Poppins;
+    line-height: 24px;
+}
+
+.login-button{
+    align-items: flex-end;
+}
+
+.login-button>.button-style{
+    width: 125px;
+    height: 45px;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+
+
+
+
+/* title-banner */
 
 header{
     height: 677px;
@@ -71,14 +111,18 @@ header{
     margin-bottom: 70px;
 }
 
-header:hover .button-style{
-    transform: scale(1.5) translate(25px,0px);;
+header:hover .header-container .button-style{
+    transition-timing-function: ease-in-out;
+    transition: transform 2s ;
+    transform: scale(1.5) translate(30px,0px) ;
+    
 }
 
 .header-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     overflow: hidden;
+    align-items: center;
     
 }
 
@@ -178,6 +222,11 @@ footer{
 
 .icon{
    margin: 10px;
+}
+
+.copyright>h6{
+    font-weight: 500;
+    font-size: 15px;
 }
 
 
